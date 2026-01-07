@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; padding: 40px 0; }
+        .item { border: 1px solid #ddd; padding: 10px; border-radius: 10px; text-align: center; }
+        .item img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
+        .buy-btn { background: var(--accent); color: white; border: none; padding: 10px; width: 100%; cursor: pointer; margin-top: 10px; border-radius: 5px; }
+        
+    </style>
+</head>
+<body>
+        <header>
+        <!-- logo -->
+         <img src="c:\ABM for Don de Dieu Iradukunda\unnamed (2).png" alt="ABM Logo" height="70px" width="70px">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        
+    </header>
+
+<div class="container">
+    <h1>Our Products</h1>
+    <div class="shop-grid">
+
+        <!-- Product 1 -->
+        <div class="item">
+            <img src="photo1.jfif" alt="Painting">
+            <h4>Painting</h4>
+            <p>$130</p>
+            <button>Buy Now</button>
+            <button class="buy-btn" onclick="buyProduct('Painting')">Buy Now</button>
+             
+        </div>
+
+        <!-- Product 2 -->
+        <div class="item">
+            <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\photo2.avif" alt="Painting">
+            <h4>Painting</h4>
+            <p>$100</p>
+            <button>Buy Now</button>
+            <button class="buy-btn" onclick="buyProduct('Painting')">Buy Now</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="item">
+            <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\tableau.jfif" alt="Painting">
+            <h4>Painting</h4>
+            <p>$125</p>
+            <button>Buy Now</button>
+            <button class="buy-btn" onclick="buyProduct('Painting')">Buy Now</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="item">
+            <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\casquette-aigle-americain-type-1-boutique-new-york-783_2000x.jpg" alt="Heat">
+            <h4>casquette-aigle-americain</h4>
+            <p>$85</p>
+            <button>Buy Now</button>
+            <button class="buy-btn" onclick="buyProduct('casquette-aigle-americain')">Buy Now</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="item">
+            <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\casquette-love-new-york-01-boutique-233_2000x.jpg" alt="heat">
+            <h4>casquette-love-new-york</h4>
+            <p>$110</p>
+            <button>Buy Now</button>
+            <button class="buy-btn" onclick="buyProduct('casquette-love-new-york')">Buy Now</button>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="item">
+            <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\casquette-usa-femme-01-boutique-new-york-665_2000x.webp" alt="heat">
+            <h4>casquette-usa-woman</h4>
+            <p>$45</p>
+            <button>Buy Now</button>
+            <button class="buy-btn" onclick="buyProduct('casquette-usa-woman')">Buy Now</button>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="item">
+            <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\chaussure-drapeau-usa-38-boutique-new-york-953_2000x.webp" alt="shoes">
+            <h4>Flag shoe</h4>
+            <p>$350</p>
+            <button>Buy Now</button>
+            <button class="buy-btn" onclick="buyProduct('Flag shoe')">Buy Now</button>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="item">
+            <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\chaussure-running-americaine-01-35-boutique-new-york-794_2000x.jpg" alt="running-shoe">
+            <h4>Running Shoe</h4>
+            <p>$850</p>
+            <button>Buy Now</button>
+            <button class="buy-btn" onclick="buyProduct('Running Shoe')">Buy Now</button>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="item">
+            <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\chaussure-style-americain-boutique-new-york-567_2000x.webp" alt="shoe-style">
+            <h4>shoe-style</h4>
+            <p>$60</p>
+            <button>Buy Now</button>
+            <button class="buy-btn" onclick="buyProduct('shoe-style')">Buy Now</button>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="item">
+            <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\tee-shirt-drapeau-americain-homme-boutique-new-york-598_2000x.webp" alt="men's American flag t-shirt">
+            <h4>men's American flag t-shirt</h4>
+            <p>$40</p>
+            <button>Buy Now</button>
+            <button class="buy-btn" onclick="buyProduct('men\'s American flag t-shirt')">Buy Now</button>
+        </div>
+        <!-- Product 11 -->
+<div class="item">
+    <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\tee-shirt-etats-unis-femme-boutique-new-york-259_2000x.webp" alt="women's United States t-shirt">
+    <h4>women's United States t-shirt</h4>
+    <p>$70</p>
+    <button>Buy Now</button>
+    <button class="buy-btn" onclick="buyProduct('women\'s United States t-shirt')">Buy Now</button>
+</div>
+
+<!-- Product 12 -->
+<div class="item">
+    <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\tee-shirt-love-new-york-fille-bleu-xxs-100cm-boutique-404_2000x.webp" alt="tee-shirt-love-new-york-fille-bleu">
+    <h4>girl's blue love-new-york t-shirt</h4>
+    <p>$420</p>
+    <button>Buy Now</button>
+    <button class="buy-btn" onclick="buyProduct('girl\'s blue love-new-york t-shirt')">Buy Now</button>
+</div>
+
+<!-- Product 13 -->
+<div class="item">
+    <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\bracelet-etats-unis-boutique-new-york-602_400x.webp" alt="bracelet-united states">
+    <h4>bracelet-united states</h4>
+    <p>$300</p>
+    <button>Buy Now</button>
+    <button class="buy-btn" onclick="buyProduct('bracelet-united states')">Buy Now</button>
+</div>
+
+<!-- Product 14 -->
+<div class="item">
+    <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\bracelet-love-new-york-boutique-229_2000x.jpg" alt="bracelet-love-new-york">
+    <h4>bracelet-love-new-york</h4>
+    <p>$2000</p>
+    <button>Buy Now</button>
+    <button class="buy-btn" onclick="buyProduct('bracelet-love-new-york')">Buy Now</button>
+</div>
+
+<!-- Product 15 -->
+<div class="item">
+    <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\bracelet-americain-boutique-new-york-206_2000x.jpg" alt="american-bracelet">
+    <h4>american-bracelet</h4>
+    <p>$85</p>
+    <button>Buy Now</button>
+    <button class="buy-btn" onclick="buyProduct('american-bracelet')">Buy Now</button>
+</div>
+<!-- Product 16 -->
+<div class="item">
+    <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\tapisserie-poster-mural-new-york-boutique-732_400x.jpg" alt="tapestry-poster-wall-new-york">
+    <h4>tapestry-poster-wall-new-york</h4>
+    <p>$85</p>
+    <button>Buy Now</button>
+    <button class="buy-btn" onclick="buyProduct('tapestry-poster-wall-new-york')">Buy Now</button>
+</div>
+<div class="item">
+    <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\tapisserie-route-66-boutique-new-york-515_400x.jpg" alt="tapestry-road-66">
+    <h4>tapestry-road-66</h4>
+    <p>$85</p>
+    <button>Buy Now</button>
+    <button class="buy-btn" onclick="buyProduct('tapestry-road-66')">Buy Now</button>
+</div>
+<div class="item">
+    <img src="c:\Users\AMERICAN CENTER\Desktop\ABM for Don de Dieu Iradukunda\tapisserie-usa-colore-150x130cm-boutique-new-york-445_400x.jpg" alt="colorful tapestry-usa">
+    <h4>colorful tapestry-usa</h4>
+    <p>$85</p>
+    <button>Buy Now</button>
+    <button class="buy-btn" onclick="buyProduct('colorful tapestry-usa')">Buy Now</button>
+</div>

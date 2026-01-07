@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #000, #222);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-container {
+  width: 350px;
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+}
+
+.social-banner {
+  background: #ff7a00;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-banner h2 {
+  margin-bottom: 5px;
+}
+
+.auth-box {
+  padding: 25px;
+}
+
+.auth-box h1 {
+  background: white;
+  color: #ff7a00;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ff7a00;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+button {
+  width: 100%;
+  background: #ff7a00;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #ff9800;
+}
+
+.switch {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.switch a {
+  color: #ff7a00;
+  text-decoration: none;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0 10px;
+  color: #aaa;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fb { color: #1877f2; }
+.ig { color: #e1306c; }
+.tw { color: #1da1f2; }
+.gg { color: #db4437; }

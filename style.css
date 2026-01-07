@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+CSS (ajouts)
+.produit {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.social-icons a {
+  font-size: 24px;
+  margin: 10px;
+  color: #3b5998; /* Example brand color */
+  text-decoration: none;
+}
+.social-icons a:hover {
+  color: #1d305d; /* Darker shade on hover */
+}
+.fa-instagram-square{
+    color: green;
+    font-size: 18px;
+}
