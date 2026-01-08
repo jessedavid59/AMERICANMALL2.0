@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+CSS (ajouts)
+.produit {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.social-icons a {
+  font-size: 24px;
+  margin: 10px;
+  color: #3b5998; /* Example brand color */
+  text-decoration: none;
+}
+.social-icons a:hover {
+  color: #1d305d; /* Darker shade on hover */
+}
+.fa-instagram-square{
+    color: green;
+    font-size: 18px;
+}
+.vintage-banner {
+  /* Replace 'your-image-url.jpg' with the actual link to your flag background */
+  background-image: url('your-image-url.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial Narrow', sans-serif; /* Best standard font for this look */
+  text-align: center;
+}
+
+.overlay-box {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  padding: 40px 60px;
+  color: white;
+  max-width: 80%;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+h1 { 
+  font-size: 3rem;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 800;
+  text-transform: none;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-left:2px
+;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem; }
+  .subtitle { font-size: 1rem; }
+  .overlay-box { padding: 20px; }
+}
+
+  /* 1. The Container: This holds the flag background */
+  .vintage-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                      url('https://images.unsplash.com/photo-1505342749007-689360980424?q=80&w=2000&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    min-height: 450px; /* Adjust height of the banner here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Arial Narrow', 'Impact', sans-serif;
+  }
+
+  /* 2. The Text Box: This creates the dark transparent rectangle */
+  .overlay-box {
+    background-color: rgba(0, 0, 0, 0.7); /* The 0.7 is the darkness (0 to 1) */
+    padding: 40px 60px;
+    color: #ffffff;
+    max-width: 700px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  /* 3. The Text Styling */
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .main-title {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin: 0;
+    font-weight: 900;
+  }
+
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .main-title { font-size: 1.8rem; }
+    .vintage-banner { min-height: 300px; }
+    .overlay-box { padding: 20px; width: 90%; }
+  }
+
+
+<div class="vintage-banner">
+  <div class="overlay-box">
+    <p class="subtitle">Vêtements, Casquettes, Décorations et Bijoux Vintage</p>
+    <h1 class="main-title">Une Boutique Au Style Vintage<br>100% Américain</h1>
+  </div>
+</div>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+/* HEADER */
+header {
+    background: #333;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover, nav a.active {
+    color: #ff9800;
+}
+
+/* CONTACT SECTION */
+.contact-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    display: flex;
+    gap: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    background: #ff9800;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #e68900;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+.contect-form button:hover {
+    background: #e68900;
+}
